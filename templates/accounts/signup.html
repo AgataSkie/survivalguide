@@ -1,0 +1,14 @@
+{% extends 'survivalguide/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Register{% endblock title %}
+
+{% block headline %}<h1>Register to the PyCon Survival Guide!</h1>{% endblock headline %}
+
+{% block content %}
+    {% crispy form %}
+
+    {% csrf_token %}
+
+{% endblock %}
